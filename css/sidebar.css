@@ -29,10 +29,11 @@
 	border-bottom: 1px solid #dfdfdf;
 	padding: 5px 20px;
 	font-size: 110%;
+	background: #f2f2f2;
 }
 
 .sidebar .menu-header:hover {
-	background-color: transparent; 
+	background-color: transparent;
 }
 
 .sidebar a:hover {
