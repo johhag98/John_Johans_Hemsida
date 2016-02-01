@@ -96,6 +96,51 @@ body {
 	margin: 0;
 }
 
+.card {
+	margin: 3px 0 0 3px;
+	height: 32%;
+	width: 32%;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+
+.card img {
+	height: 100%;
+}
+
+.card h2 {
+	top: 15px;
+	margin: 0;
+	font-size: 1.5em;
+	left: 25px;
+	position: absolute;
+	z-index: 1;
+}
+
+.card-content {
+	background-color: rgb(170,0,0);
+	box-sizing: border-box;
+	left: -140px;
+	top : 0;
+	height: 100%;
+	width: 160px;
+	padding: 30px 20px 10px 10px;
+	position: absolute;
+	transition: all 0.5s ease;
+}
+
+.card:hover .card-content {
+	background-color: rgba(170,0,0,);
+	left: 0;
+	top: 0;
+}
+
+.card a, h2, p{
+	color: white;
+	text-decoration: none;
+}
+
 footer {
 	background-color: darkred;
 	height: 10vh;
