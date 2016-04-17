@@ -85,23 +85,24 @@ div.quicklinks_left {
 
 /*Arangemang 2.0 CSS WIP!*/
 .card {
+  display: inline-block;
+  height: auto;
   margin: 3px 0 0 3px;
-  height: 10vw;
-  width: auto;
   overflow: hidden;
   position: relative;
-  display: inline-block;
+  width: 383px;
 }
 
 .card img {
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .card h2 {
   top: 15px;
   margin: 0;
   font-size: 2vw;
-  left: 25px;
+  left: 40px;
   position: absolute;
   z-index: 1;
   line-height: 2vw;
@@ -120,7 +121,7 @@ div.quicklinks_left {
 }
 
 .card-content p {
-  margin: 20px 0 0 15px;
+  margin: 25px 0 0 15px;
 }
 
 .card:hover .card-content {
@@ -129,7 +130,28 @@ div.quicklinks_left {
   top: 0;
 }
 
-.card a, h2, p{
+.card a, .card h2, .card p{
   color: white;
   text-decoration: none;
+}
+
+#TopMenuList {
+  background-color: #f83a30;
+}
+
+#ContainerMiddleDiv {
+  background:none;  
+}
+
+#MainDiv {
+  margin-top:0;
+  background-color:white;
+  padding: 0 20px;
+  position: relative;
+  left: -20px;
+  border-radius: 20px/30px;
+}
+
+#TopMenuList {
+  background-color: #f83a30;
 }
