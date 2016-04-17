@@ -1,0 +1,37 @@
+<h2 style="text-align: center;"><span style="font-size: large;">Hej och välkommen till OK Klemmingen.</span></h2>
+<p style="text-align: center;"><span style="font-size: medium;">Här finns aktuell information om föreningen och våra aktiviteter. För äldre information, tex statistik &amp; resultat, välj idrott  nedan.</span></p>
+<div class="wrapper-dropdown" id="dd">Välj idrott...                                                                      
+<ul class="dropdown">
+<li style="text-align: left;"> <a target="_blank" title="Orientering" href="http://ol.klemmingen.nu/">Orientering</a> </li>
+<li style="text-align: left;"> <a target="_blank" title="OL-Skytte" href="http://ol-skytte.klemmingen.nu/">Orienteringsskytte</a> </li>
+<li style="text-align: left;"> <a target="_blank" title="Friidrott" href="http://friidrott.klemmingen.nu/">Friidrott</a> </li>
+</ul>
+</div>
+<script type="text/javascript">// <![CDATA[
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+// ]]></script>
+<!-- -->

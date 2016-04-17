@@ -85,31 +85,30 @@ div.quicklinks_left {
 
 /*Arangemang 2.0 CSS WIP!*/
 .card {
-  display: inline-block;
-  height: auto;
   margin: 3px 0 0 3px;
+  height: 10vw;
+  width: auto;
   overflow: hidden;
   position: relative;
-  width: 383px;
+  display: inline-block;
 }
 
 .card img {
-  height: auto;
-  width: 100%;
+  height: 100%;
 }
 
 .card h2 {
   top: 15px;
   margin: 0;
   font-size: 2vw;
-  left: 40px;
+  left: 25px;
   position: absolute;
   z-index: 1;
   line-height: 2vw;
 }
 
 .card-content {
-  background-color: #ce3129;
+  background-color: rgb(170,0,0);
   box-sizing: border-box;
   left: -65%;
   top : 0;
@@ -121,7 +120,7 @@ div.quicklinks_left {
 }
 
 .card-content p {
-  margin: 25px 0 0 15px;
+  margin: 20px 0 0 15px;
 }
 
 .card:hover .card-content {
@@ -130,14 +129,9 @@ div.quicklinks_left {
   top: 0;
 }
 
-.card a, .card h2, .card p{
+.card a, .card h2,.card p{
   color: white;
   text-decoration: none;
-}
-
-/*Lite fix med bakgrund osv*/
-#TopMenuList {
-  background-color: #f83a30;
 }
 
 #ContainerMiddleDiv {
@@ -154,43 +148,5 @@ div.quicklinks_left {
 }
 
 #TopMenuList {
-  background-color: #f83a30;
-}
-
-/*Lite fix med notiser och vänster kolunen*/
-#BoxAreaDiv div.StartPageBoxRow h2{
-    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#eef), to(#fff));
-    background-image: -webkit-linear-gradient(bottom, #eef 0%, #fff 100%);
-    background-image: -moz-linear-gradient(bottom, #eef 0%, #fff 100%);
-    background-image: -o-linear-gradient(bottom, #eef 0%, #fff 100%);
-    background-image: linear-gradient(bottom, #eef 0%, #fff 100%);
-    border-radius: 6px 0px 6px 0px;
-    border: 1px solid #e6e6e6;
-    color: #2763b9;
-    font-size: 18px;
-    font-weight:normal;
-    height: auto;
-    line-height: 18px;
-    padding: 10px 10px;
-    text-align: left;
-    width: auto;
-}
-.StartPageBoxContent {
-  background-color:#fff;
-}
-a:hover {
-  text-decoration:none;
-}
-.NewsListTitleDiv a {
-  font-size: 1.01rem;
-  font-weight: 500;
-}
-
-/*Meny*/
-#TopMenuList li a:hover {
-  background: #ce3129
-}
-
-#TopMenuDiv #TopMenuList li.TopMenuSelectedItem>a, #EmptyTopMenuDiv #TopMenuList li.TopMenuSelectedItem>a {
   background-color: #f83a30;
 }
